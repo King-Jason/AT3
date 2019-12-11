@@ -15,14 +15,14 @@
       <requestedPrivileges xmlns="urn:schemas-microsoft-com:asm.v3">
         <!--
           UAC Manifest Options
-          If you want to change the Windows User Account Control level replace the
+          If you want to change the Windows User Account Control level replace the 
           requestedExecutionLevel node with one of the following.
 
         <requestedExecutionLevel  level="asInvoker" uiAccess="false" />
         <requestedExecutionLevel  level="requireAdministrator" uiAccess="false" />
         <requestedExecutionLevel  level="highestAvailable" uiAccess="false" />
 
-         If you want to utilize File and Registry Virtualization for backward
+         If you want to utilize File and Registry Virtualization for backward 
          compatibility then delete the requestedExecutionLevel node.
     -->
         <requestedExecutionLevel level="asInvoker" uiAccess="false" />
@@ -85,19 +85,31 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>F8JyI8tstexaSsFwzfDgZJ/8fj8kENKhSJoyzuwf8yc=</dsig:DigestValue>
+        <dsig:DigestValue>5Qy98fAxzROKagHda1B+/zN8S3Mn+gzSlaz8o6NjXQo=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="MusicPlayer.exe" size="24544">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="MediaInfoDotNet.dll" size="49152">
+      <assemblyIdentity name="MediaInfoDotNet" version="0.7.79.40925" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>Q6/SFNYontF5Aco+pOT/1v8OtzfIH43QbQe9yz30ho0=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="MusicPlayer.exe" size="32224">
       <assemblyIdentity name="MusicPlayer" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>/ybS1gSe2hSWrxcJJztKPMuIsJTZvWH+djU2Wt2+K8o=</dsig:DigestValue>
+        <dsig:DigestValue>l/+sja0r2OkqbN6gzj8vIQZzPlUq3n21DJ52Ter09IU=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -132,6 +144,24 @@
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
       <dsig:DigestValue>rl5/qDc7Jz+tB+BIbOv9iMGPlRe6YJwrjmU09dnlPcs=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="x64\MediaInfo.dll" size="5461840">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>GOZRKEa7zsNHKdcKc76SmTJaI7H5zLFTadJEroI+UT8=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="x86\MediaInfo.dll" size="4586832">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>gffYYM154EQldt/f6vbbxUc2dHgvMLZW4vrE866BiZo=</dsig:DigestValue>
     </hash>
   </file>
 </asmv1:assembly>

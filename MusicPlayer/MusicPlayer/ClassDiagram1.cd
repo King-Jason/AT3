@@ -1,50 +1,31 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ClassDiagram MajorVersion="1" MinorVersion="1">
   <Class Name="MusicPlayer.DBC">
-    <Position X="9.75" Y="0.5" Width="1.5" />
+    <Position X="0.5" Y="0.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAEAAgAAAAAAAAAAAQAAAAEAAABAAAAUgA=</HashCode>
       <FileName>DBC.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="MusicPlayer.Hasher">
-    <Position X="7.75" Y="0.5" Width="1.5" />
+    <Position X="2.25" Y="0.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAABABAAAAAAAAYIAAAAAAAAQAAAAAgA=</HashCode>
       <FileName>Hasher.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="MusicPlayer.MusicPlayer" Collapsed="true">
-    <Position X="6" Y="0.5" Width="1.5" />
+  <Class Name="MusicPlayer.MusicPlayer">
+    <Position X="5.75" Y="0.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>CEAEoAAASCAXBg4gIAGQRBBKAIgAj0lgAIAAgALEAgI=</HashCode>
+      <HashCode>CEAEoAAASCAXBg4gIAGQVBBKAIgAj0lgAIAAgALEAgI=</HashCode>
       <FileName>MusicPlayer.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="MusicPlayer.Program" Collapsed="true">
-    <Position X="0.5" Y="1.5" Width="1.5" />
-    <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAA=</HashCode>
-      <FileName>Program.cs</FileName>
-    </TypeIdentifier>
-  </Class>
   <Class Name="MusicPlayer.Session">
-    <Position X="4.25" Y="0.5" Width="1.5" />
+    <Position X="4" Y="0.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>ABAAAAAAAAAAAAAgAgAAAAEAAAAAAAAAAAAAAgAAAAA=</HashCode>
       <FileName>Session.cs</FileName>
-    </TypeIdentifier>
-  </Class>
-  <Class Name="MusicPlayer.Properties.Resources" Collapsed="true">
-    <Position X="0.5" Y="0.5" Width="1.5" />
-    <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAABEAAAAQAAAAAAAAAAAAAAAIA=</HashCode>
-    </TypeIdentifier>
-  </Class>
-  <Class Name="MusicPlayer.Properties.Settings" Collapsed="true">
-    <Position X="0.5" Y="2.5" Width="1.5" />
-    <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAIAAAAAABAAAAAAAAAAAAAAA=</HashCode>
     </TypeIdentifier>
   </Class>
   <Font Name="Segoe UI" Size="9" />

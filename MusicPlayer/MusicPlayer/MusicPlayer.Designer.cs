@@ -43,6 +43,9 @@
             this.lblProfileName = new System.Windows.Forms.Label();
             this.WMP = new AxWMPLib.AxWindowsMediaPlayer();
             this.musicPanel = new System.Windows.Forms.Panel();
+            this.lblExitText = new System.Windows.Forms.Label();
+            this.btnRemove = new System.Windows.Forms.Button();
+            this.hSBVolume = new System.Windows.Forms.HScrollBar();
             this.tbSearch = new System.Windows.Forms.TextBox();
             this.btnSearch = new System.Windows.Forms.Button();
             this.btnSort = new System.Windows.Forms.Button();
@@ -152,32 +155,41 @@
             // 
             // btnPlay
             // 
+            this.btnPlay.BackColor = System.Drawing.Color.Silver;
+            this.btnPlay.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnPlay.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Bold);
             this.btnPlay.Location = new System.Drawing.Point(505, 533);
             this.btnPlay.Name = "btnPlay";
             this.btnPlay.Size = new System.Drawing.Size(95, 38);
             this.btnPlay.TabIndex = 2;
             this.btnPlay.Text = "Play";
-            this.btnPlay.UseVisualStyleBackColor = true;
+            this.btnPlay.UseVisualStyleBackColor = false;
             this.btnPlay.Click += new System.EventHandler(this.btnPlay_Click);
             // 
             // btnPrev
             // 
+            this.btnPrev.BackColor = System.Drawing.Color.Silver;
+            this.btnPrev.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnPrev.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Bold);
             this.btnPrev.Location = new System.Drawing.Point(404, 533);
             this.btnPrev.Name = "btnPrev";
             this.btnPrev.Size = new System.Drawing.Size(95, 38);
             this.btnPrev.TabIndex = 3;
             this.btnPrev.Text = "Previous";
-            this.btnPrev.UseVisualStyleBackColor = true;
+            this.btnPrev.UseVisualStyleBackColor = false;
             this.btnPrev.Click += new System.EventHandler(this.btnPrev_Click);
             // 
             // btnNext
             // 
+            this.btnNext.BackColor = System.Drawing.Color.Silver;
+            this.btnNext.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnNext.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Bold);
             this.btnNext.Location = new System.Drawing.Point(606, 533);
             this.btnNext.Name = "btnNext";
             this.btnNext.Size = new System.Drawing.Size(95, 38);
             this.btnNext.TabIndex = 4;
             this.btnNext.Text = "Next";
-            this.btnNext.UseVisualStyleBackColor = true;
+            this.btnNext.UseVisualStyleBackColor = false;
             this.btnNext.Click += new System.EventHandler(this.btnNext_Click);
             // 
             // lblProfileName
@@ -203,6 +215,8 @@
             // 
             // musicPanel
             // 
+            this.musicPanel.Controls.Add(this.btnRemove);
+            this.musicPanel.Controls.Add(this.hSBVolume);
             this.musicPanel.Controls.Add(this.tbSearch);
             this.musicPanel.Controls.Add(this.btnSearch);
             this.musicPanel.Controls.Add(this.btnSort);
@@ -219,50 +233,94 @@
             this.musicPanel.TabIndex = 0;
             this.musicPanel.Visible = false;
             // 
+            // lblExitText
+            // 
+            this.lblExitText.AutoSize = true;
+            this.lblExitText.ForeColor = System.Drawing.Color.White;
+            this.lblExitText.Location = new System.Drawing.Point(9, 588);
+            this.lblExitText.Name = "lblExitText";
+            this.lblExitText.Size = new System.Drawing.Size(188, 13);
+            this.lblExitText.TabIndex = 16;
+            this.lblExitText.Text = "Press Control + D to close the program";
+            // 
+            // btnRemove
+            // 
+            this.btnRemove.BackColor = System.Drawing.Color.Silver;
+            this.btnRemove.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnRemove.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Bold);
+            this.btnRemove.Location = new System.Drawing.Point(926, 285);
+            this.btnRemove.Name = "btnRemove";
+            this.btnRemove.Size = new System.Drawing.Size(95, 38);
+            this.btnRemove.TabIndex = 15;
+            this.btnRemove.Text = "Remove";
+            this.btnRemove.UseVisualStyleBackColor = false;
+            this.btnRemove.Click += new System.EventHandler(this.btnRemove_Click);
+            // 
+            // hSBVolume
+            // 
+            this.hSBVolume.Location = new System.Drawing.Point(759, 543);
+            this.hSBVolume.Name = "hSBVolume";
+            this.hSBVolume.Size = new System.Drawing.Size(238, 17);
+            this.hSBVolume.TabIndex = 14;
+            this.hSBVolume.ValueChanged += new System.EventHandler(this.hSBVolume_ValueChanged);
+            // 
             // tbSearch
             // 
-            this.tbSearch.Location = new System.Drawing.Point(222, 563);
+            this.tbSearch.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.tbSearch.Location = new System.Drawing.Point(926, 259);
+            this.tbSearch.Multiline = true;
             this.tbSearch.Name = "tbSearch";
-            this.tbSearch.Size = new System.Drawing.Size(100, 20);
+            this.tbSearch.Size = new System.Drawing.Size(188, 19);
             this.tbSearch.TabIndex = 13;
+            this.tbSearch.WordWrap = false;
             // 
             // btnSearch
             // 
-            this.btnSearch.Location = new System.Drawing.Point(222, 521);
+            this.btnSearch.BackColor = System.Drawing.Color.Silver;
+            this.btnSearch.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSearch.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Bold);
+            this.btnSearch.Location = new System.Drawing.Point(926, 215);
             this.btnSearch.Name = "btnSearch";
-            this.btnSearch.Size = new System.Drawing.Size(100, 23);
+            this.btnSearch.Size = new System.Drawing.Size(95, 38);
             this.btnSearch.TabIndex = 12;
             this.btnSearch.Text = "Search";
-            this.btnSearch.UseVisualStyleBackColor = true;
+            this.btnSearch.UseVisualStyleBackColor = false;
             this.btnSearch.Click += new System.EventHandler(this.btnSearch_Click);
             // 
             // btnSort
             // 
-            this.btnSort.Location = new System.Drawing.Point(119, 533);
+            this.btnSort.BackColor = System.Drawing.Color.Silver;
+            this.btnSort.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSort.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Bold);
+            this.btnSort.Location = new System.Drawing.Point(926, 171);
             this.btnSort.Name = "btnSort";
-            this.btnSort.Size = new System.Drawing.Size(97, 38);
+            this.btnSort.Size = new System.Drawing.Size(95, 38);
             this.btnSort.TabIndex = 11;
             this.btnSort.Text = "Sort";
-            this.btnSort.UseVisualStyleBackColor = true;
+            this.btnSort.UseVisualStyleBackColor = false;
             this.btnSort.Click += new System.EventHandler(this.btnSort_Click);
             // 
             // btnAddSong
             // 
-            this.btnAddSong.Location = new System.Drawing.Point(18, 533);
+            this.btnAddSong.BackColor = System.Drawing.Color.Silver;
+            this.btnAddSong.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAddSong.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAddSong.Location = new System.Drawing.Point(926, 126);
             this.btnAddSong.Name = "btnAddSong";
             this.btnAddSong.Size = new System.Drawing.Size(95, 38);
             this.btnAddSong.TabIndex = 10;
             this.btnAddSong.Text = "Add Song";
-            this.btnAddSong.UseVisualStyleBackColor = true;
+            this.btnAddSong.UseVisualStyleBackColor = false;
             this.btnAddSong.Click += new System.EventHandler(this.btnAddSong_Click);
             // 
             // lbSongs
             // 
             this.lbSongs.FormattingEnabled = true;
-            this.lbSongs.Location = new System.Drawing.Point(18, 60);
+            this.lbSongs.Location = new System.Drawing.Point(179, 67);
             this.lbSongs.Name = "lbSongs";
-            this.lbSongs.Size = new System.Drawing.Size(368, 420);
+            this.lbSongs.Size = new System.Drawing.Size(741, 420);
             this.lbSongs.TabIndex = 9;
+            this.lbSongs.SelectedIndexChanged += new System.EventHandler(this.lbSongs_SelectedIndexChanged);
             // 
             // lblSongName
             // 
@@ -379,12 +437,15 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(16)))), ((int)(((byte)(16)))));
             this.ClientSize = new System.Drawing.Size(1154, 610);
+            this.Controls.Add(this.lblExitText);
             this.Controls.Add(this.WMP);
             this.Controls.Add(this.musicPanel);
             this.Controls.Add(this.loginPanel);
             this.Controls.Add(this.signupPanel);
+            this.KeyPreview = true;
             this.Name = "MusicPlayer";
             this.Text = "Music Player";
+            this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.MusicPlayer_KeyDown);
             this.loginPanel.ResumeLayout(false);
             this.loginPanel.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.WMP)).EndInit();
@@ -393,6 +454,7 @@
             this.signupPanel.ResumeLayout(false);
             this.signupPanel.PerformLayout();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -427,6 +489,9 @@
         private System.Windows.Forms.Button btnSignup;
         private System.Windows.Forms.TextBox tbSEmail;
         private System.Windows.Forms.TextBox tbSPassword;
+        private System.Windows.Forms.HScrollBar hSBVolume;
+        private System.Windows.Forms.Button btnRemove;
+        private System.Windows.Forms.Label lblExitText;
     }
 }
 

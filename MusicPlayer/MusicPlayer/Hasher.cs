@@ -9,12 +9,18 @@ namespace MusicPlayer
 {
     class Hasher
     {
+        //Jason King
+        //P465642
+        //12/12/2019
         private RNGCryptoServiceProvider cSP = new RNGCryptoServiceProvider();
         private int SALT_SIZE = 40;
         UTF8Encoding enc8 = new UTF8Encoding();
 
         public Hasher() { }
 
+        /*
+         * Generates a hashed password including salt
+         */ 
         public string getHashedPassword(string password)
         {
             string salt = generateSalt();
